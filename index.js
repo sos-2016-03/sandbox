@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 var express = require("express");
 var bodyParser = require("body-parser");
 var governify = require("governify");
@@ -21,16 +20,7 @@ app.get("/group/names", (req, res)=>{
     ])
 })
 
-app.listen(port, ()=>{
-	console.log("Listening on port: " + port);
-})
-=======
-var express=require("express");
 var fs=require("fs");
-var app=express();
-var bodyParser=require("body-parser");
-
-var port = (process.env.PORT || 11000);
 
 
 
@@ -309,5 +299,3 @@ app.use('/',express.static(__dirname + '/public'));
 app.listen(port, ()=>{
 	console.log("Magic happens on port: " + port);
 });
-
->>>>>>> f99bad51438fcd152240d619c265b697e0294c13
