@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
   "name": "sandbox",
   "version": "1.0.0",
   "main": "index.js",
@@ -10,10 +11,19 @@
   "devDependencies": {},
   "scripts": {
     "start" : "node index.js",
+=======
+  "name": "sos-2016-03",
+  "version": "0.2.8",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+>>>>>>> f99bad51438fcd152240d619c265b697e0294c13
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
+<<<<<<< HEAD
     "url": "git+https://github.com/sos-2016-03/sandbox.git"
   },
   "author": "",
@@ -23,4 +33,18 @@
   },
   "homepage": "https://github.com/sos-2016-03/sandbox#readme",
   "description": ""
+=======
+    "url": "git+https://github.com/sos-2016-03/sos-2016-03.git"
+  },
+  "author": "Alberto",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sos-2016-03/sos-2016-03/issues"
+  },
+  "homepage": "https://github.com/sos-2016-03/sos-2016-03#readme",
+  "dependencies": {
+    "body-parser": "^1.15.0",
+    "express": "^4.13.4"
+  }
+>>>>>>> f99bad51438fcd152240d619c265b697e0294c13
 }

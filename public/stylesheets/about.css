@@ -1,0 +1,38 @@
+body{
+	background: #F2F2F2;
+	width:85%;
+	margin-left: 7%;
+	font-size:18px;
+}
+table{
+	-moz-border-radius: 10px; /* Firefox */
+	-webkit-border-radius: 10px; /* Google Chrome y Safari */
+	border-radius: 10px;
+	width: 95%;
+}
+table, tr, td{
+	border:1px solid #848484;
+	font-size:20px;
+	
+}
+tr{
+	text-align: center;
+}
+.main{
+	border:1px solid #848484;
+	-moz-border-radius: 10px; /* Firefox */
+	-webkit-border-radius: 10px; /* Google Chrome y Safari */
+	border-radius: 10px;	
+	padding:20px;
+	height: 30%;
+	background-color:#D8D8D8;
+}
+.list-group{
+	float:left;
+	width: 60%;
+}
+.theme{
+	float:left;
+	width: 40%;
+	margin-top:-17px;
+}
