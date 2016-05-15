@@ -9,15 +9,13 @@
   },
   "devDependencies": {},
   "scripts": {
-    "start" : "node index.js",
+  "start": "node index.js",
+  "test": "echo \"Error: no test specified\" && exit 1",
   "name": "sos-2016-03",
   "version": "0.2.8",
   "description": "",
   "main": "index.js",
-  "scripts": {
-    "start": "node index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  
   "repository": {
     "type": "git",
     "url": "git+https://github.com/sos-2016-03/sandbox.git"
