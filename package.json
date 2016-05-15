@@ -9,12 +9,12 @@
   },
   "devDependencies": {},
   "scripts": {
-  "start" : "node index.js",
-  "name": "sos-2016-03",
-  "version": "0.2.8",
-  "description": "",
-  "main": "index.js",
-  "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js",
+    "name": "sos-2016-03",
+    "version": "0.2.8",
+    "description": "",
+    "main": "index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
@@ -27,5 +27,5 @@
   },
   "homepage": "https://github.com/sos-2016-03/sandbox#readme",
   "description": "",
-    "url": "git+https://github.com/sos-2016-03/sos-2016-03.git"
+  "url": "git+https://github.com/sos-2016-03/sos-2016-03.git"
 }
