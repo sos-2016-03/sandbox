@@ -5,7 +5,7 @@ var governify = require("governify");
 var app = express();
 governify.control(app,{
   datastore :"http://datastore.governify.io/api/v6.1/",
-  namespace :"sos-2016-03-grupo",
+  namespace :"sos-2016-03-group",
   defaultPath: "/group"
 });
 
@@ -302,3 +302,4 @@ app.use('/',express.static(__dirname + '/public'));
 app.listen(port, ()=>{
 	console.log("Magic happens on port: " + port);
 });
+*/
