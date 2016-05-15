@@ -1,4 +1,5 @@
-var express = require("express");
+
+/*var express = require("express");
 var bodyParser = require("body-parser");
 var governify = require("governify");
 
@@ -12,9 +13,6 @@ var port = (process.env.PORT || 12000);
 
 app.use(bodyParser.json());
 
-
-var fs=require("fs");
-
 app.get("/group/names", (req, res)=>{
   res.send([
     {name: "Patricia González Sevilla"},
@@ -22,6 +20,14 @@ app.get("/group/names", (req, res)=>{
     {name: "ALberto Jesús Rodríguez Pulido"}
     ])
 })
+
+app.listen(port, ()=>{
+	console.log("Listening on port: " + port);
+})
+
+var fs=require("fs");
+
+
 
 app.get("/time",(req,res)=>{
 	var days=["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
@@ -62,10 +68,10 @@ app.post("/music",function(req,res){
 });
 
 
-/*****API de Ana*****/
+/*****API de Ana*****
 //--------------------------------------------------------------------------------------------
 var tennisplayers = [];
-/*-------GET-------*/
+/*-------GET-------
 app.get("/api/sandbox/tennisplayers", (req,res)=>{
 	res.send(tennisplayers);
 	console.log("New GET of resource " + "tennisplayers");
@@ -101,7 +107,7 @@ app.post("/api/sandbox/tennisplayers/:name", (req,res)=>{
 	res.sendStatus(405);
 });
 
-/*-------PUT-------*/
+/*-------PUT-------
 app.put("/api/sandbox/tennisplayers", (req,res)=>{
 	console.log("Operation PUT not permitted in this case");
 	res.sendStatus(405);
@@ -127,7 +133,7 @@ app.put("/api/sandbox/tennisplayers/:name", (req,res)=>{
 	}
 });
 
-/*-------DELETE-------*/
+/*-------DELETE-------
 app.delete("/api/sandbox/tennisplayers", (req,res)=>{
 	if(tennisplayers.length != 0){
 		tennisplayers.splice(0, tennisplayers.length);
@@ -295,4 +301,7 @@ app.use('/',express.static(__dirname + '/public'));
 
 app.listen(port, ()=>{
 	console.log("Magic happens on port: " + port);
-});
+});*/
+
+console.log("Hello World");
+app.listen(process.env.PORT || 12000);
