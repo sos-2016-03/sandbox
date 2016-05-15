@@ -12,6 +12,9 @@ var port = (process.env.PORT || 12000);
 
 app.use(bodyParser.json());
 
+
+var fs=require("fs");
+
 app.get("/group/names", (req, res)=>{
   res.send([
     {name: "Patricia González Sevilla"},
@@ -19,10 +22,6 @@ app.get("/group/names", (req, res)=>{
     {name: "ALberto Jesús Rodríguez Pulido"}
     ])
 })
-
-var fs=require("fs");
-
-
 
 app.get("/time",(req,res)=>{
 	var days=["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
@@ -54,8 +53,6 @@ app.get("/time",(req,res)=>{
 	res.write("<a href='/about/'>« Previous</a></body></html>");
 	res.end();
 });
-
-app.use(bodyParser.json());
 
 app.post("/music",function(req,res){
 	res.sendStatus(200);
