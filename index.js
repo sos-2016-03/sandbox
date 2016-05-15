@@ -1,15 +1,15 @@
-
-/*var express = require("express");
+var express = require("express");
 var bodyParser = require("body-parser");
 var governify = require("governify");
 
 var app = express();
 governify.control(app,{
   datastore :"http://datastore.governify.io/api/v6.1/",
-  namespace :"sos-2016-03-group",
+  namespace :"sos-2016-03-grupo",
   defaultPath: "/group"
 });
-var port = (process.env.PORT || 12000);
+
+var port = (process.env.PORT || 10000);
 
 app.use(bodyParser.json());
 
@@ -25,10 +25,8 @@ app.listen(port, ()=>{
 	console.log("Listening on port: " + port);
 })
 
-var fs=require("fs");
 
-
-
+/*
 app.get("/time",(req,res)=>{
 	var days=["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
 	var months=[
@@ -60,6 +58,8 @@ app.get("/time",(req,res)=>{
 	res.end();
 });
 
+app.use(bodyParser.json());
+
 app.post("/music",function(req,res){
 	res.sendStatus(200);
 	console.log("New POST");
@@ -68,7 +68,7 @@ app.post("/music",function(req,res){
 });
 
 
-/*****API de Ana*****
+/*****API de Ana****
 //--------------------------------------------------------------------------------------------
 var tennisplayers = [];
 /*-------GET-------
@@ -301,7 +301,4 @@ app.use('/',express.static(__dirname + '/public'));
 
 app.listen(port, ()=>{
 	console.log("Magic happens on port: " + port);
-});*/
-
-console.log("Hello World");
-app.listen(process.env.PORT || 12000);
+});
